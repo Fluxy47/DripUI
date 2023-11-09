@@ -31,6 +31,12 @@ const ComponentListing = ({featured=0}) => {
             'icon': 'ri-layout-bottom-line',
             'featured':true
         },
+        {
+            'name':'sidebars',
+            'count':2,
+            'icon': 'ri-layout-bottom-line',
+            'featured':true
+        },
       
     ]
 

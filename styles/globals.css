@@ -38,3 +38,17 @@ a {
   }
 
 }
+
+
+#toggle:checked + #sidebar {
+  display: inline;
+}
+
+#toggle:checked + #content {
+  display: inline;
+}
+
+#toggle:not(:checked) + #sidebar,
+#toggle:not(:checked) + #content {
+  display: none;
+}

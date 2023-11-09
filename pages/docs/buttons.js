@@ -25,7 +25,7 @@ export default function Buttons() {
       />
 
       <section className="grid grid-cols-1 gap-16 md:grid-cols-2">
-        <div className="flex flex-col gap-4">
+        {/* <div className="flex flex-col gap-4">
           {BasicBtns.map((btn) => (
             <Button {...btn} key={btn.type} text="" />
           ))}
@@ -39,7 +39,35 @@ export default function Buttons() {
           {ColoredShadowBtns.map((btn) => (
             <Button {...btn} key={btn.type} text="" />
           ))}
-        </div>
+        </div> */}
+         {/* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 400px;
+  z-index: 1;
+  transition: 0.5s;
+  backdrop-filter: blur(15px); */}
+
+       <div className="relative top-0 left-0 w-[250px] h-[50px] m-0 flex justify-center items-center">
+        <a className="absolute top-0 left-0 w-[100%] h-[100%] flex justify-center items-center bg-[rgba(255, 255, 255, 0.05)]">Hi there</a>
+
+       </div>
+
       </section>
     </>
   );
