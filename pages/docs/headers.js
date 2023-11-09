@@ -11,7 +11,6 @@ import SideBar from "../../components/drip/sideBars/SideBar";
 import { basicSidebars } from "../../components/drip/sideBars/basicSideBars";
 
 export default function Buttons() {
-
   return (
     <section className="lg:px-12 px-3 ">
       <Meta
@@ -30,17 +29,13 @@ export default function Buttons() {
       />
 
       <section className="flex flex-col gap-6">
-          <h2 className="text-3xl font-semibold">Basic Navbar&apos;s</h2>
+        <h2 className="text-3xl font-semibold">Basic Navbar&apos;s</h2>
         <div className="flex flex-col lg:gap-8">
-         {basicNavbars.map((navbar, index) => (<Navbar key={"Nav" + index} {...{ navbar }} />))} 
-         {basicSidebars.map((sidebar, index) => (<SideBar key={"sidebar" + index} {...{ sidebar }} />))} 
+          {basicNavbars.map((navbar, index) => (
+            <Navbar key={"Nav" + index} {...{ navbar }} />
+          ))}
         </div>
       </section>
     </section>
   );
 }
-
-
-
-
-
